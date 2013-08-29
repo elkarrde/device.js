@@ -8,7 +8,7 @@
         min-height:100%;
         height:100%;
       }
-          
+
             html {
                 padding: 30px 10px;
                 font-size: 20px;
@@ -35,12 +35,12 @@
                 text-align: center;
         color:#222;
             }
-      
+
       h4 {
         text-align: center;
         color: #333;
       }
-      
+
             p {
                 margin: 1em 0;
             }
@@ -55,19 +55,19 @@
         left: 0;
         margin: 0;
       }
-      
+
       .container-middle {
         padding: 0;
         vertical-align: middle;
         display: table-cell;
         margin: 0;
       }
-      
+
       .container-inner {
         width: 500px;
         margin: 0 auto;
       }
-      
+
       .content {
         text-align: left;
         padding: 10px 35px;
@@ -81,20 +81,20 @@
         background-image: -ms-radial-gradient(50% 35%, ellipse cover, #FAF7F7, #fffde8 100%);
         background-image: radial-gradient(50% 35%, ellipse cover, #FAF7F7, #fffde8 100%);
       }
-      
+
       p.footer {
         text-align:center;
         font-size:0.75em;
       }
-      
-      p.footer a, 
-      p.footer a:visited 
+
+      p.footer a,
+      p.footer a:visited
       p.footer a:active {
         color:#424242;
         text-decoration:none;
         font-weight:bold;
       }
-      
+
       p.footer a:hover {
         text-decoration:underline;
       }
@@ -109,7 +109,8 @@
       .ipod .ipod,
       .android .android,
       .blackberry .blackberry,
-      .windows .windows {
+      .windows .windows,
+      .linux .linux {
         background: green;
         color: #FFF;
       }
@@ -128,8 +129,8 @@
   <body>
 
     <div class="container-outer">
-      <div class="container-middle"> 
-        <div class="container-inner"> 
+      <div class="container-middle">
+        <div class="container-inner">
           <div class="content">
             <h2>Device Type</h2>
             <span class="mobile">.mobile</span>
@@ -149,6 +150,7 @@
             <span class="android">.android</span>
             <span class="blackberry">.blackberry</span>
             <span class="windows">.windows</span>
+            <span class="linux">.linux</span>
           </div>
           <p class="footer">Created by <a href="http://www.matthewhudson.me/">Matthew Hudson</a> &mdash; Download <a href="http://github.com/matthewhudson/device.js">device.js on Github</a>
         </div>
@@ -156,7 +158,7 @@
     </div>
 
     <script src="../lib/device.min.js"></script>
-    
+
     <script type="text/javascript">
       console.log("device.portrait() === %s", device.portrait());
       console.log("device.landscape() === %s", device.landscape());
@@ -167,7 +169,12 @@
       console.log("device.iphone() === %s", device.iphone());
       console.log("device.android() === %s", device.android());
       console.log("device.androidTablet() === %s", device.androidTablet());
+      console.log("device.blackberry() === %s", device.blackberry());
       console.log("device.blackberryTablet() === %s", device.blackberryTablet());
+      console.log("device.windows() === %s", device.windows());
+      console.log("device.windowsPhone() === %s", device.windowsPhone());
+      console.log("device.windowsTablet() === %s", device.windowsTablet());
+      console.log("device.linux() === %s", device.linux());
     </script>
 
   </body>
